@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --sora: "Sora", serif;
+    --manrope: "Manrope", serif;
+
+    --content-w: 1409;
+}
+
+/* Left nav start */
+
+.nav {
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 48px 0 33px 0;
+
+    width: 208px;
+    height: 100vh;
+
+    background-color: rgba(11, 17, 55);
+
+    color: #fff;
+}
+
+.nav__logo {
+    width: 120px;
+    height: 32px;
+
+    margin: 0 0 64px 32px;
+    /* margin-bottom: 64px; */
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+    row-gap: 32px;
+
+    margin-bottom: 270px;
+}
+
+.nav__elem {
+    display: flex;
+
+    width: 144px;
+}
+
+.nav__elem:hover {
+    cursor: pointer;
+}
+
+.nav__elem-active {
+}
+
+.elem-img {
+    margin-right: 8px;
+}
+
+.elem-img-active {
+
+}
+
+.nav__text {
+    font-family: var(--sora);
+    font-size: 14px;
+}
+
+.help__container {
+    display: flex;
+}
+
+.help__block {
+}
+.help-img {
+}
+.help__text {
+}
+.dark__block {
+}
+.dark {
+}
+.dark__text {
+}
+
+/* Left nav end */
