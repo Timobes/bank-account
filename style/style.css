@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+@font-face {
+    font-family: "Ocr";
+    src: url("../font/ocrabeckerrus_lat.otf") format("opentype");
+}
+
 :root {
     --sora: "Sora", serif;
     --manrope: "Manrope", serif;
 
     --content-w: 1409;
+}
+
+body {
+    background-color: #050624;
 }
 
 /* Left nav start */
@@ -89,3 +98,275 @@
 }
 
 /* Left nav end */
+
+
+
+/* User info start */
+
+
+.user__info {
+    float: right;
+    display: flex;
+    flex-direction: column;
+
+    width: 317px;
+    height: 100vh;
+
+    padding: 32px 32px 34px 32px;
+
+    background-color: #3d7be52a;
+    color: #fff;
+
+    position: fixed;
+    right: 0;
+}
+
+.info__header {
+    display: flex;
+
+    margin-bottom: 22px;
+}
+
+.info__search { 
+    width: 187px;
+    height: 26px;
+
+    padding: 5px 0 4px 28px;
+
+    border: 1px solid #4B6EAC;
+    border-radius: 8px;
+
+    color: #D3E1F5;
+
+    background-color: #4B6EAC;
+}
+
+.noftications {
+}
+.user__avatar {
+    width: 24px;
+    height: 24px;
+
+    border-radius: 360px;
+}
+
+.info__heading {
+    font-size: 16px;
+
+    margin-bottom: 16px;
+}
+
+.info__pay-card {
+    width: 252px;
+    height: 144px;
+
+    padding: 14px 22px 24px 14px;
+    margin-bottom: 32px;
+
+    background-color: #01B8E3;
+    
+    background: linear-gradient(to bottom right, #050624, #3D7AE5), linear-gradient(#36D9FF, #3D8AEA, #4444D7, #3A3345), linear-gradient(#36D9FF, #4A00C5);
+
+    border-radius: 9px;
+}
+
+.pay__card {
+    width: 215px;
+    height: 100px;
+}
+
+.pay__card-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightning {
+
+}
+.paypass {
+}
+
+.pay__card-number {
+    font-family: "Ocr";
+    font-size: 10px;
+
+    margin-top: 38px;
+}
+.pay__card-info {
+    display: flex;
+
+    font-size: 8px;
+
+    margin-top: 18px;
+
+    position: relative;
+}
+
+.pay__card-owner {
+    font-family: "Ocr";
+}
+
+.pay__card-date {
+
+}
+
+.pay__card-info-text {
+    display: flex;
+    align-items: center;
+
+    column-gap: 8px;
+}
+
+.pay__card-bank {
+}
+
+.pay__card-bank > img {
+    position: absolute;
+    right: 0;
+}
+
+
+
+.pay__transfer {
+    width: 253px;
+    height: 211px;
+
+    /* background-color: #d3e1f550; */
+    background-color: #d3e1f52f;
+
+    padding: 23px 16px 12px 16px;
+    margin-bottom: 32px;
+}
+
+.transfer__account-num-container {
+    display: flex;
+
+    column-gap: 8px;
+}
+
+.transfer__account-num {
+    width: 187px;
+    height: 26px;
+
+    font-size: 10px;
+
+    /* background-color: #4B6EAC; */
+    background-color: rgba(75, 111, 172, 0.3);
+
+    border: 1px solid #4B6EAC;
+    border-radius: 8px;
+    color: #fff;
+
+    pointer-events: none;
+
+    padding: 5px 0 4px 8px;
+}
+
+
+.transfer__account-btn {
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+
+    background: linear-gradient(#3E79E5, #01B8E3);
+}
+
+.transfer__account-select {
+    width: 221px;
+    height: 26px;
+
+    background: none;
+    color: #fff;
+
+    font-size: 10px;
+
+    border: 1px solid #fff;
+    border-radius: 6px;
+
+    padding: 6px 8px 6px 8px;
+    margin-top: 16px;
+}
+
+.transfer__account-amount {
+    width: 220px;
+    height: 51px;
+
+    margin-top: 15px;
+}
+
+.transfer__btns {
+    display: flex;
+    column-gap: 6px;
+
+    margin-top: 16px;
+}
+
+.transfer__account-send {
+    width: 107px;
+    height: 26px;
+
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+
+    color: #3D7AE5;
+    background: linear-gradient(#F0F0F0, #F0F0F0);
+}
+
+.transfer__account-send-blue {
+    color: #fff;
+    background: linear-gradient(#3E79E5, #01B8E3);
+}
+
+.info__buttons {
+    display: flex;
+    /* flex-wrap: wrap; */
+
+    column-gap: 20px;
+}
+
+.info__button-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom right, #3E79E5, #01B8E3);
+    border-radius: 8px;
+
+    width: 48px;
+    height: 48px;
+}
+
+.info__button {
+    text-align: center;
+}
+
+.info__button-img {
+    width: 18px;
+    height: 18px;
+}
+
+.info__button-text {
+    color: #798BA3;
+    font-size: 12px;
+
+    margin-top: 7px;
+}
+
+
+.info__contacts {
+    
+}
+
+
+/* User info end */
+
